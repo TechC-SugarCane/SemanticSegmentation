@@ -14,11 +14,11 @@ def change_file_extention(file, to_suffix):
     shutil.move(from_file_path, to_file_path)
 
 
-def resize_image(img_path, IMAGE_SIZE=256):
+def resize_image(img_path, IMAGE_WIDTH=1980, IMAGE_HEIGHT=1080):
     for image in img_path:
         img = Image.open(image)
 
-        img_resize = img.resize((IMAGE_SIZE, IMAGE_SIZE))
+        img_resize = img.resize((IMAGE_WIDTH, IMAGE_HEIGHT))
         img_resize.save(f'{image}', quality=90)
 
 
