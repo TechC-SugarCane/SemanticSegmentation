@@ -6,5 +6,4 @@ segmentation_models_pytorch
 albumentations
 labelme
 numpy
-glob
 tqdm
