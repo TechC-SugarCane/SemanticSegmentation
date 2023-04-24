@@ -25,7 +25,7 @@ git clone https://github.com/TechC-SugarCane/SemanticSegmentation-demo
 `
 
 1. 以下のリンクをクリックしてデータセットをダウンロードします
-    - [dataset.zip 630MiB]("https://sugarcane.blob.core.windows.net/demo-dataset/dataset.zip")
+    - [dataset.zip 630MiB](https://sugarcane.blob.core.windows.net/demo-dataset/dataset.zip "dataset.zip 630MiB")
 
 1. ダウンロードしたデータセットを解凍してSemanticSegmentation-demoフォルダーの直下に保存します
 
@@ -33,11 +33,12 @@ git clone https://github.com/TechC-SugarCane/SemanticSegmentation-demo
 次のコマンドをコマンドを入力して必要なモジュールをすべてインストールします。
 
 `
-pip install -U requirements.txt
+pip install requirements.txt
 `
 
 インストールされているか確認する
-` module
+
+``` python
 import cv2
 import PIL
 import torch
@@ -55,7 +56,7 @@ print(smp.__version__)
 print(albumentations.__version__)
 print(glob.__version__)
 print(tqdm.__version__)
-`
+```
 
 ### 2 アノテーション
 
