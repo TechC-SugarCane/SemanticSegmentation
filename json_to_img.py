@@ -67,5 +67,5 @@ if temp_dir_path.exists():
 print("Conversion is finished")
 
 """ run this command
-python json_to_img.py "./dataset/json/" -o="./dataset/masks/" -label_files="./dataset/label/label.txt"
+python json_to_img.py "./dataset/json/" -o="./dataset/masks/" -label_file="./dataset/label/label.txt"
 """
